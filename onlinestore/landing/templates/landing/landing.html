@@ -1,5 +1,34 @@
 {% extends "landing/wrapper.html" %}
 
 {%block body%}
-<h1>Test</h1>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Logo for shop</h1>
+        </div>
+        <div class="col">
+
+        </div>
+        <div class="col">
+            menu...
+        </div>
+    </div>
+</div>
+<div class="container">
+    <hr>
+    <div class="row">
+        <div class="col">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac nibh fermentum, commodo diam nec, tristique quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur erat dolor, faucibus volutpat iaculis non, suscipit ac tortor. Maecenas at ante dolor. Suspendisse potenti. Sed sodales, sapien non bibendum mattis, enim ligula commodo leo, vitae vehicula nibh mauris id turpis. Nulla nec tortor iaculis mi egestas viverra non et ante. Nulla vulputate erat at nibh blandit luctus. Phasellus ut placerat quam, sit amet pharetra dui. Proin vel sapien dapibus, sagittis est sed, fermentum augue. Nunc non quam a libero molestie cursus. Curabitur quis quam nec purus vulputate accumsan. Integer dictum imperdiet mauris tincidunt fermentum. Nam id blandit neque. Vestibulum tincidunt tristique metus, vel hendrerit risus porttitor eu. In a porttitor tellus.</p>
+        </div>
+        <div class="col">
+            <div class="media">
+                {%load staticfiles%}
+                <img src='{% static "landing/img/icon.png"%}' alt='Generic placeholder image' class="mr-3">
+                <div class="media-body">
+                    Phasellus bibendum felis ligula. Curabitur ornare sem eu dui pharetra elementum. Cras tempus eu massa eu rutrum. Nam viverra ligula congue, viverra ligula ut, euismod urna.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {%endblock%}
