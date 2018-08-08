@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Subscribers
+from .models import Subscriber
 
-admin.site.register(Subscribers)
+admin.site.register(Subscriber)
