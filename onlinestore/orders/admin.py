@@ -2,8 +2,14 @@ from django.contrib import admin
 from .models import *
 
 
+class ProductInOrderInline(admin.TabularInline):
+    model = ProductInOrder
+
+
 class OrderAdmin(admin.ModelAdmin):
     list_display = ['customer_name', 'customer_email']
+    inlines = [ProductInOrderInline]
+
 
     class Meta:
         model = Order
